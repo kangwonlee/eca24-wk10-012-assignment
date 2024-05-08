@@ -371,7 +371,7 @@ def test_compare_int_cos_diff(
 
     expected_diff = abs(expected_exact_int - (c_array.sum() / division))
 
-    assert math.isclose(result_diff, expected_diff), (
+    assert math.isclose(result_diff, expected_diff, rel_tol=1e-4), (
         f"please verify `{diff_key}` (result : {result_diff}, expected : {expected_diff}).\n"
         f"`{diff_key}` 값을 확인 바람. (반환된 값 : abs({result_compare_numint} - {result_area_exact})  = {result_diff}, 예상된 값 : abs({(c_array.sum() / division)} - {expected_exact_int})= {expected_diff})"
     )

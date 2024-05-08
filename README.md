@@ -61,7 +61,6 @@
 | `theta_rad_end` | `float` | rad | upper bound of the integral<br>적분구간의 상한 |
 | `n` | `int` | - | number of equally spaced intervals between the bounds. always an even number<br>적분 구간을 나눈 등간격 수. 항상 짝수임 |
 
-* 
 * Please return a `dict` containing `numpy` array of the `n` areas of the trapezoids of 1st order integration and the sum of all areas as the numerical integration in `float`.<br>`dict`를 반환하시오. value 로 `n`개의 1차 적분의 각 사다리꼴의 넓이를 담은 배열과 해당 면적의 합을 `float`로 담으시오.
 
 | key (str)<br>키 (문자열) | type of value<br>value 의 형 | unit<br>단위 | description<br>설명 |

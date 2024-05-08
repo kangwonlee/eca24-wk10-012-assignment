@@ -93,6 +93,13 @@
 | `'diff_2'` | `float` | - | the absolute value of the difference between the 2nd order integration vs exact<br>2차 적분과 이론값의 차이의 절대값 |
 | `'is_close_2'` | `bool` | - | whether the absolute value `diff_2` is smaller than `epsilon`<br>절대값 `diff_2` 이(가) `epsilon` 보다 작은지 여부
 
+## Grading<br>평가
+
+|       | points<br>배점 |
+|:-----:|:-------------:|
+| python grammar<br>파이썬 문법 | 2 |
+| all lines of `main.py` in the function<br>`main.py` 파일에는 함수만 포함 | 1 |
+| results<br>결과값 | 2 |
 
 ## Example<br>예
 

@@ -83,12 +83,15 @@
 | key (str)<br>키 (문자열) | type of value<br>value 의 형 | unit<br>단위 | description<br>설명 |
 |:-----------------:|:----------:|:----------:|:------------------:|
 | `'area_exact'` | `float` | - | the exact definite integration<br>해당 정적분 이론값 |
-| `'area_1'` | `float` | - | the 1st order numerical integration<br>해당 1차 수치 적분 값 |
-| `'diff_1'` | `float` | - | the absolute value of the difference between the 1st order integration vs exact<br>1차 적분과 이론값의 차이의 절대값 |
-| `'is_close_1'` | `bool` | - | whether the absolute value `diff_1` is smaller than `epsilon`<br>절대값 `diff_1` 이(가) `epsilon` 보다 작은지 여부
 | `'area_0'` | `float` | - | the 0th order numerical integration<br>해당 0차 수치 적분 값 |
 | `'diff_0'` | `float` | - | the absolute value of the difference between the 0th order integration vs exact<br>0차 적분과 이론값의 차이의 절대값 |
 | `'is_close_0'` | `bool` | - | whether the absolute value `diff_0` is smaller than `epsilon`<br>절대값 `diff_0` 이(가) `epsilon` 보다 작은지 여부
+| `'area_1'` | `float` | - | the 1st order numerical integration<br>해당 1차 수치 적분 값 |
+| `'diff_1'` | `float` | - | the absolute value of the difference between the 1st order integration vs exact<br>1차 적분과 이론값의 차이의 절대값 |
+| `'is_close_1'` | `bool` | - | whether the absolute value `diff_1` is smaller than `epsilon`<br>절대값 `diff_1` 이(가) `epsilon` 보다 작은지 여부
+| `'area_2'` | `float` | - | the 2nd order numerical integration<br>해당 2차 수치 적분 값 |
+| `'diff_2'` | `float` | - | the absolute value of the difference between the 2nd order integration vs exact<br>2차 적분과 이론값의 차이의 절대값 |
+| `'is_close_2'` | `bool` | - | whether the absolute value `diff_2` is smaller than `epsilon`<br>절대값 `diff_2` 이(가) `epsilon` 보다 작은지 여부
 
 
 ## Example<br>예

@@ -365,6 +365,8 @@ def test_compare_int_cos_diff(
         c_array:np.array,
         division:float,
         diff_key:str,
+        result_compare_numint:float,
+        result_area_exact:float,
     ):
 
     expected_diff = abs(expected_exact_int - (c_array.sum() / division))

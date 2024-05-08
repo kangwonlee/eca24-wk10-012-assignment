@@ -52,7 +52,7 @@
 | `'a_array_1'` | `numpy` array | - | the `n` areas of trapezoids of 1st order integration<br>1차 적분의 `n`개의 사다리꼴의 넓이 |
 | `'area_1'` | `float` | - | the numerical integration<br>해당 수치 적분 값 |
 
-### 2nd order integration<br>1차 적분
+### 2nd order integration<br>2차 적분
 * Function `int_cos_2()` has three argument : `theta_rad_begin`, `theta_rad_end`, and `n`.<br>함수 `int_cos_2()` 의 매개변수는 `theta_begin`, `theta_end`, 그리고 `n` 이다.
 
 | argument<br>매개변수 | type<br>형 | unit<br>단위 | description<br>설명 |
@@ -61,7 +61,7 @@
 | `theta_rad_end` | `float` | rad | upper bound of the integral<br>적분구간의 상한 |
 | `n` | `int` | - | number of equally spaced intervals between the bounds. always an even number<br>적분 구간을 나눈 등간격 수. 항상 짝수임 |
 
-* Please return a `dict` containing `numpy` array of the `n` areas of the trapezoids of 1st order integration and the sum of all areas as the numerical integration in `float`.<br>`dict`를 반환하시오. value 로 `n`개의 1차 적분의 각 사다리꼴의 넓이를 담은 배열과 해당 면적의 합을 `float`로 담으시오.
+* Please return a `dict` containing `numpy` array of the `n // 2` areas below the parabolas of 2nd order integration and the sum of all areas as the numerical integration in `float`.<br>`dict`를 반환하시오. value 로 `n // 2`개의 2차 적분의 각 포물선 아래의 넓이를 담은 배열과 해당 면적의 합을 `float`로 담으시오.
 
 | key (str)<br>키 (문자열) | type of value<br>value 의 형 | unit<br>단위 | description<br>설명 |
 |:-----------------:|:----------:|:----------:|:------------------:|
@@ -101,7 +101,9 @@ theta_rad_begin = 0.0
 theta_rad_end = np.pi / 2
 n = 100
 
+print(int_cos_0(theta_rad_begin, theta_rad_end, n))
 print(int_cos_1(theta_rad_begin, theta_rad_end, n))
+print(int_cos_2(theta_rad_begin, theta_rad_end, n))
 
 epsilon = 1e-6
 print(compare_int_cos(theta_rad_begin, theta_rad_end, n, epsilon))

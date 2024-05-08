@@ -15,7 +15,7 @@
 | `int_cos_0()` | calculate definite integral of $cos \theta$ using numerical integration of 0th order<br>0차 수치 적분을 사용하여 $cos \theta$의 정적분을 계산 |
 | `int_cos_1()` | calculate definite integral of $cos \theta$ using numerical integration of 1th order<br>1차 수치 적분을 사용하여 $cos \theta$의 정적분을 계산 |
 | `int_cos_2()` | calculate definite integral of $cos \theta$ using numerical integration of 2th order<br>2차 수치 적분을 사용하여 $cos \theta$의 정적분을 계산 |
-| `compare_int_cos()` | compare the numerical integration and the exact integration of $cos \theta`<br>$cos \theta$의 수치 적분과 정적분을 비교 |
+| `compare_int_cos()` | compare the numerical integration and the exact integration of $cos \theta$<br>$cos \theta$의 수치 적분과 정적분을 비교 |
 
 * Please see `sample.py` file for an example.<br>사용 예에 대해서는 `sample.py` 파일을 참고하시오.
 * In `main.py` file, every python code line must belong to one of functions.<br>`main.py` 파일에서 모든 파이썬 코드 라인은 반드시 함수 중 하나에 속해야 함.

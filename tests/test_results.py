@@ -32,12 +32,12 @@ random.seed()
 
 
 @pytest.fixture
-def x1_deg() -> float:
+def x1_deg() -> int:
     return random.randint(0, 90)
 
 
 @pytest.fixture
-def x2_deg() -> float:
+def x2_deg() -> int:
     return random.randint(270, 360)
 
 

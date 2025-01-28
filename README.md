@@ -97,7 +97,7 @@
 
 |       | points<br>배점 |
 |:-----:|:-------------:|
-| python grammar<br>파이썬 문법 | 2 |
+| Python Syntax<br>파이썬 문법 | 2 |
 | all lines of `main.py` in the function<br>`main.py` 파일에는 함수만 포함 | 1 |
 | results<br>결과값 | 2 |
 

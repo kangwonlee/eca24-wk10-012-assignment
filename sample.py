@@ -2,7 +2,7 @@ import random
 import numpy as np
 
 
-import main
+import exercise
 
 
 def sample_main():
@@ -13,7 +13,7 @@ def sample_main():
 
     n = random.randint(100, 300)
 
-    result_0 = main.int_cos_0(x1_rad, x2_rad, n)
+    result_0 = exercise.int_cos_0(x1_rad, x2_rad, n)
 
     a_array_0 = result_0['a_array_0']
     i = random.randint(0, len(a_array_0)-1)
@@ -22,7 +22,7 @@ def sample_main():
     print(f"area of rect #{i} is {rect_i}")
 
 
-    result_1 = main.int_cos_1(x1_rad, x2_rad, n)
+    result_1 = exercise.int_cos_1(x1_rad, x2_rad, n)
     a_array_1 = result_1['a_array_1']
     j = random.randint(0, len(a_array_1)-1)
     trapz_j = a_array_1[j]
@@ -33,7 +33,7 @@ def sample_main():
     print(f"1st order result is {result_1['area_1']}")
 
     epsilon = 1e-6
-    print(main.compare_int_cos(x1_rad, x2_rad, n, epsilon))
+    print(exercise.compare_int_cos(x1_rad, x2_rad, n, epsilon))
 
 
 if "__main__" == __name__:

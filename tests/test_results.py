@@ -25,7 +25,7 @@ proj_folder = test_folder.parent.absolute()
 sys.path.insert(0, str(proj_folder))
 
 
-import main
+import exercise
 
 
 random.seed()
@@ -93,7 +93,7 @@ def delta_x_rad(x_rad_array2:np.ndarray) -> float:
     return x_rad_array2[1] - x_rad_array2[0]
 
 
-@pytest.fixture(params=[main.int_cos_0, main.int_cos_1, main.int_cos_2])
+@pytest.fixture(params=[exercise.int_cos_0, exercise.int_cos_1, exercise.int_cos_2])
 def int_method(request):
     return request.param
 
@@ -239,7 +239,7 @@ def epsilon() -> float:
 
 @pytest.fixture
 def result_compare_int_cos(x1_rad:float, x2_rad:float, n_rect:int, epsilon:float) -> RESULT:
-    return main.compare_int_cos(x1_rad, x2_rad, n_rect, epsilon)
+    return exercise.compare_int_cos(x1_rad, x2_rad, n_rect, epsilon)
 
 
 def test_compare_int_cos_type(result_compare_int_cos:RESULT):
@@ -388,4 +388,4 @@ def test_compare_int_cos_is_close(
 
 
 if "__main__" == __name__:
-    pytest.main([__file__])
+    pytest.exercise([__file__])
